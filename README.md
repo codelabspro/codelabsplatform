@@ -16,7 +16,7 @@ npm run dev
 
 
 ```
-==> npm create skeleton-app@latest codelabs-pro
+==> npm create skeleton-app@latest codelabspro
 Need to install the following packages:
   create-skeleton-app@0.0.16
 Ok to proceed? (y) y

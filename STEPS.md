@@ -1,4 +1,4 @@
-# codelabsplatform
+# codelabspro
 
 #CodeLabsPro Platform
 
@@ -7,7 +7,7 @@
 
 ```
 
-npm create skeleton-app@latest codelabs-pro
+npm create skeleton-app@latest codelabspro
 	- Enable SvelteKit's Typescript syntax
 cd my-skeleton-app
 npm run dev

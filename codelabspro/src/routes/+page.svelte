@@ -1,9 +1,10 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
-
+<script>
+	import Test from '$lib/Test.svelte';
+</script>
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center">
 		<h2 class="font-bold">Welcome to CodeLabsPro</h2>
-
+		<Test/>
 	</div>
 
 	<style lang="postcss">

@@ -3,8 +3,9 @@
 </script>
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center">
-		<h2 class="font-bold">Welcome to CodeLabsPro</h2>
-		<h2>{data.blogposts.posts[2].title}</h2>
+		<h1 class="font-bold">Welcome to CodeLabsPro</h1>
+		<!-- <h2>{data.blogposts.posts[2].title}</h2> -->
+		<h2 class="font-bold">Fullstack eCommerce Automation</h2>
 	</div>
 
 	<style lang="postcss">

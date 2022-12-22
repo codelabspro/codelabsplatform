@@ -5,7 +5,7 @@
 	<div class="space-y-10 text-center">
 		<h1 class="font-bold">CodeLabsPro</h1>
 		<!-- <h2>{data.blogposts.posts[2].title}</h2> -->
-		<h2 class="font-bold">Fullstack Automation CRM</h2>
+		<h2 class="font-bold">Fullstack Automation Cloud CRM</h2>
 	</div>
 
 	<style lang="postcss">

@@ -3,7 +3,7 @@
 </script>
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center">
-		<h1 class="font-bold">CodeLabsPro</h1>
+		<h1 class="font-bold">Cloud Automation Pro</h1>
 		<!-- <h2>{data.blogposts.posts[2].title}</h2> -->
 		<h2 class="font-bold">Fullstack Cloud Automation</h2>
 	</div>

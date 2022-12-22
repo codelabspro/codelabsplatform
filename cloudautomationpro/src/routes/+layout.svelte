@@ -1,0 +1,104 @@
+<script>
+	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
+	import '@skeletonlabs/skeleton/styles/all.css';
+	import '../theme.postcss';
+	import '../app.postcss';
+	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
+</script>
+
+<!-- App Shell -->
+<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+	<svelte:fragment slot="header">
+		<!-- App Bar -->
+		<AppBar>
+			<svelte:fragment slot="lead">
+				<strong class="text-xl uppercase">Cloud Automation Pro</strong>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<a class="btn btn-sm btn-ghost-surface" href="/" rel="noreferrer">Main</a>
+				<a class="btn btn-sm btn-ghost-surface" href="about/"rel="noreferrer">About</a>
+				<a class="btn btn-sm btn-ghost-surface" href="blog/" rel="noreferrer">Blog</a>
+				<a class="btn btn-sm btn-ghost-surface" href="contact/" rel="noreferrer">Contact</a>
+				<LightSwitch />
+			</svelte:fragment>
+		</AppBar>
+	</svelte:fragment>
+	<!-- Page Route Content -->
+	<slot />
+</AppShell>
+
+<style>
+
+:root {
+	/* =~= Theme Styles =~= */
+	--theme-border-base: 1px;
+	--theme-font-family-heading: system-ui;
+	--theme-font-family-base: system-ui;
+	--theme-font-color-base: var(--color-surface-900);
+	--theme-font-color-dark: var(--color-surface-50);
+	--theme-rounded-base: 4px;
+	--theme-rounded-container: 8px;
+	/* =~= Theme On-X Colors =~= */
+	--on-primary: #000;
+	--on-accent: #fff;
+	--on-tertiary: #000;
+	--on-warning: #fff;
+	--on-surface: #fff;
+	/* =~= Theme Colors | Hex =~= */
+	/* primary | #c3283d */
+	--color-primary-50: 253 247 247; /* ⬅ #fdf7f7 */
+	--color-primary-100: 251 234 236; /* ⬅ #fbeaec */
+	--color-primary-200: 246 213 217; /* ⬅ #f6d5d9 */
+	--color-primary-300: 239 179 187; /* ⬅ #efb3bb */
+	--color-primary-400: 224 103 119; /* ⬅ #e06777 */
+	--color-primary-500: 195 40 61; /* ⬅ #c3283d */
+	--color-primary-600: 140 29 43; /* ⬅ #8c1d2b */
+	--color-primary-700: 102 21 32; /* ⬅ #661520 */
+	--color-primary-800: 59 12 18; /* ⬅ #3b0c12 */
+	--color-primary-900: 30 6 9; /* ⬅ #1e0609 */
+	/* accent | #3482b7 */
+	--color-accent-50: 247 250 253; /* ⬅ #f7fafd */
+	--color-accent-100: 235 244 249; /* ⬅ #ebf4f9 */
+	--color-accent-200: 215 232 244; /* ⬅ #d7e8f4 */
+	--color-accent-300: 183 214 235; /* ⬅ #b7d6eb */
+	--color-accent-400: 112 173 215; /* ⬅ #70add7 */
+	--color-accent-500: 52 130 183; /* ⬅ #3482b7 */
+	--color-accent-600: 37 94 131; /* ⬅ #255e83 */
+	--color-accent-700: 27 68 95; /* ⬅ #1b445f */
+	--color-accent-800: 16 40 56; /* ⬅ #102838 */
+	--color-accent-900: 8 20 28; /* ⬅ #08141c */
+	/* tertiary | #d1481a */
+	--color-tertiary-50: 254 248 246; /* ⬅ #fef8f6 */
+	--color-tertiary-100: 252 237 232; /* ⬅ #fcede8 */
+	--color-tertiary-200: 249 220 210; /* ⬅ #f9dcd2 */
+	--color-tertiary-300: 245 191 173; /* ⬅ #f5bfad */
+	--color-tertiary-400: 235 127 92; /* ⬅ #eb7f5c */
+	--color-tertiary-500: 209 72 26; /* ⬅ #d1481a */
+	--color-tertiary-600: 150 51 19; /* ⬅ #963313 */
+	--color-tertiary-700: 109 37 13; /* ⬅ #6d250d */
+	--color-tertiary-800: 64 22 8; /* ⬅ #401608 */
+	--color-tertiary-900: 32 11 4; /* ⬅ #200b04 */
+	/* warning | #de0d30 */
+	--color-warning-50: 254 245 247; /* ⬅ #fef5f7 */
+	--color-warning-100: 254 231 235; /* ⬅ #fee7eb */
+	--color-warning-200: 252 207 214; /* ⬅ #fccfd6 */
+	--color-warning-300: 250 168 182; /* ⬅ #faa8b6 */
+	--color-warning-400: 245 81 109; /* ⬅ #f5516d */
+	--color-warning-500: 222 13 48; /* ⬅ #de0d30 */
+	--color-warning-600: 159 9 34; /* ⬅ #9f0922 */
+	--color-warning-700: 116 7 25; /* ⬅ #740719 */
+	--color-warning-800: 67 4 15; /* ⬅ #43040f */
+	--color-warning-900: 34 2 7; /* ⬅ #220207 */
+	/* surface | #a84354 */
+	--color-surface-50: 252 248 248; /* ⬅ #fcf8f8 */
+	--color-surface-100: 248 237 239; /* ⬅ #f8edef */
+	--color-surface-200: 240 219 222; /* ⬅ #f0dbde */
+	--color-surface-300: 229 189 196; /* ⬅ #e5bdc4 */
+	--color-surface-400: 203 124 137; /* ⬅ #cb7c89 */
+	--color-surface-500: 168 67 84; /* ⬅ #a84354 */
+	--color-surface-600: 120 48 60; /* ⬅ #78303c */
+	--color-surface-700: 88 35 44; /* ⬅ #58232c */
+	--color-surface-800: 51 20 25; /* ⬅ #331419 */
+	--color-surface-900: 26 10 13; /* ⬅ #1a0a0d */
+}
+</style>
